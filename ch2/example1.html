@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Δίνω μορφοποίηση στο κείμενο με 3 τρόπους: 1)In-line μεσα στην παράγραφο,heading κτλ, 2)internal styling για όλη τη σελίδα μέσα στο head 3)external σε ξεχωριστό css αρχείο με Link μέσα στο html 
+Specifity - ποιος από τους κανόνες υπερισχύει?-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example1 - CSS</title>
+    
+    <!-- internal styling σε όλη τη σελίδα -->
+    <style>
+        
+        p {
+            color: green;
+            background-color: aqua;
+        }
+
+        h1 {
+            font-size: .5em;
+        }
+
+        /* στο font size οταν έχω rem παίρνει το νούμερο που βάζω επί το default pixel size του browser πχ 16 pixel
+        To em παιρνει το font size του parent, αν δεν βρει πάει στον πιο πάνω parent και αν δεν βρει πουθενά τότε παίρνει του browser. */
+
+    </style>
+
+    <!-- για styling που το έχω σε ξεχωριστό css αρχείο -->
+    <link rel="stylesheet" href="./css/example1.css">
+
+
+</head>
+<body>
+
+    <!-- in line style -->
+    <h1 style="color: red; background-color: black;">Hello Coding Factory</h1> 
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint incidunt maxime voluptatem minima! Sit quasi quaerat expedita est hic voluptas praesentium omnis molestias sapiente vel quo sequi, aliquam, harum exercitationem.</p>
+
+    <a href="https://codingfactory.aueb.gr/" target="_blank">Coding Factory Page</a> 
+    
+    <!-- blank για να ανοιξει σε καινούριο tab -->
+
+    <ul>
+        <li>JAVA</li>
+        <li>CSS</li>
+        <li>HTML</li>
+    </ul>
+
+    <p>Default styling</p>
+
+
+</body>
+</html>

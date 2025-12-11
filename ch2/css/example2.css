@@ -1,0 +1,89 @@
+/* Οι κανόνες εφαρμόζονται σαν πρώτο κανόνα σειριακά εκτός αν υπάρχει κάποια πιο ειδική μορφοποίηση πχ με class name όπου έχει μεγαλύτερο specificity και συνεπώς μεγαλύτερη ισχύ */
+
+body {
+    background-color: lightgray;
+}
+
+p, li {
+    color: red;
+}
+
+/* li {
+    color: red;
+}  
+αν θέλω σε δύο πεδία την ίδια μορφοποίηση μπορώ να τα βάλω μαζί με κόμμα*/
+
+.aueb-logo {
+    border: 3px solid green;
+    width: 400px;
+    /* height: auto; */
+}
+
+img.aueb-logo {
+    height: auto;
+}
+
+p.aueb-logo {
+    color: blue;
+}
+
+/* p {
+    color: yellow;
+} */
+
+ul > li {
+    color: blue;
+}
+/* με το μεγαλυτερο ">" εννοώ τους άμεσους απογόνους δηλαδή την εσωτερίκη li που έχει πατέρα την ol δεν την λαμβάνει υπόψη, χωρίς το μεγαλύτερο παίρνει όλα τα li */
+
+h1 + p {
+    color: orange;
+}
+
+/* ζητάω να πάρει την πρώτη (μόνο) παράγραφο που βρίσκεται μετά τα h1 (μπορεί το h1 να βρίσκεται παραπάνω απο μία φορές στο body) αλλά βρίσκεται στο ίδιο επίπεδο με το h1 δεν ειναι εμφολευμένη */
+
+/* ΟΙ ΜΟΡΦΟΠΟΙΗΣΕΙΣ ΓΙΑ LINK ΠΡΕΠΕΙ ΝΑ ΔΙΝΟΝΤΑΙ ΜΕ ΤΗΝ ΣΥΓΚΕΚΡΙΜΕΝΗ ΑΚΟΛΟΥΘΗ ΣΕΙΡΑ: */
+
+.link-cf:link {
+    text-decoration: none;
+    color: black;
+}
+/* πως θέλω να φαίνεται το Link, χρώμα, υπογράμμιση κτλ */
+
+.link-cf:visited {
+    color: magenta
+}
+/* όταν επισκεφτώ το Link γίνεται καφέ */
+
+.link-cf:hover {
+    background-color: greenyellow;
+}
+/* όταν κάνω hover πάνω στο Link με το ποντίκι υπογραμμίζεται πράσινο */
+
+.link-cf:focus {
+    outline: none;
+    background-color: yellow;
+}
+/* ενεργοποιείται αφού πατήσω το Link και το έχω επισκεφτεί*/
+
+.link-cf:active {
+    background-color: chocolate;
+}
+/* ενεργοποιείται όταν πατάω το αρίστερο κουμπί του ποντικιού μου πάνω στο link */
+
+#auebLogo {
+    color: pink;
+}
+/* για να μορφοποιήσω με βάση το id χρησιμοποιώ το #. Δεν προτείνεται όμως να χρησιμοποιείται το id στις μορφοποιήσεις αλλα δίνεται για να χρησιμοποιείται κυρίως απο την javascript πχ για να κανει hide κάποιο πεδίο. Το class είναι ο σωστός τρόπος να δώσω μορφοποίηση */
+
+.border-green-1 {
+    border: 1px solid green;
+}
+
+.border-green-2 {
+    border: 2px solid green;
+}
+
+.text-blue {
+    color: blue;
+}

@@ -13,6 +13,7 @@
 
         .row {
             margin-bottom: 10px;
+            /* αφήνει κενό μεταξυ των πεδίων της φόρμας ώστε να μην είναι κολλητά */
         }
 
         label {
@@ -31,12 +32,14 @@
         .input-item:focus {
             outline: none;
         }
+        /* όταν επιλέγω το input box μου το κάνει πιο έντονο το Outline */
 
         [type='submit'] {
             margin-left: 85px;
             margin-top: 10px;
             padding: 10px 75px;
             border-radius: 5px;
+            /* η καμπύλη στο πλαίσιο του box */
             color: white;
             background-color: blue;
         }
@@ -48,6 +51,7 @@
 
         h1::after {
             content: '\2764\FE0F';
+            /* red heart decoration */
             margin-left: 20px;
         }
     </style>
@@ -63,6 +67,8 @@
             <input class="input-item" type="text" name="" id="username" placeholder="Insert username">
         </div>
 
+        <!--  Βάζοντας στο label το for="username" συνδέω την περιγραφή μέσω του id με το textbox ώστε να βελτιώσω το UE, o χρήστης πατόντας και πάνω στην περιγραφή μπορείς να γράψει μέσα στο texboc -->
+
         <div class="row">
             <label for="email">Email</label>
             <input class="input-item" type="email" name="" id="email" placeholder="Insert email">
@@ -76,6 +82,7 @@
 
         <div>
             <input type="submit" value="Submit">
+            <!-- input type submit δίνει ένα button -->
         </div>
     
     </form>

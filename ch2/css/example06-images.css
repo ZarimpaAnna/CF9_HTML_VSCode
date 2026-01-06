@@ -1,0 +1,71 @@
+.city {
+  width:400px;
+  height: auto;
+}
+
+.img-rounded {
+  border-radius: 10px;
+}
+/* για να στρογγυλέψει τις γωνίες της εικόνας */
+
+.img-circle {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+}
+/* για να γίνει στρογγυλή η εικόνα πρέπει πρώτα να την έχω με τετράγωνη βάση και με το 50% γίνεται κύκλος. αν δεν την κανω τετράγωνη με το width/height τότε θα είναι έλλειψη και οχι κύκλος */
+
+.thumbnail {
+  width:150px;
+  height: auto;
+  /* border: 2px double rgb(177, 174, 174); συντομογραφία των 3 παρακάτω εντολών*/
+  border-width: 5px;
+  border-style:double;
+  border-color:rgb(177, 174, 174);
+}
+
+.thumbnail:hover {
+  box-shadow: 0px 0px 2px 2px rgb(55, 186,230);
+  width: 155px;
+  height: auto;
+}
+
+.card {
+  width: 600px;
+  border: 1px solid red;
+  box-shadow: 0 0 2px 2px lightgreen;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+  /* 10px top-bottom 20px left-right */
+  padding: 10px 20px; 
+  /* padding: 10px->πανω 20px->δεξιά 10px->κατω 20px->αριστερά */
+}
+
+/* με το margin auto στοιχίζω στη μέση και δίνω περιθώριο απο πάνω με το Margin top. με το padding δίνω εσωτερικά περιθώριο μέσα στο "κουτί" μου ώστε τα περιεχόμενα να μην ειναι πανω στα όρια του κουτιού */
+
+.card-image {
+  width:100%;
+}
+
+/* για να μην ξεχυλίζει η εικόνα που ειναι μεγαλύτερη από το λογικο κουτί μου το div, δίνω ποσοστό 100% του πατέρα δηλαδή του div (που τώρα ακολουθεί την class card δηλαδή 600px) και όχι συγκεκριμένα Pixel ώστε να είναι safe σε περίπτωση αλλαγής του πρώτου να ακολουθεί και το δεύτερο */
+
+.card-text {
+  text-align: center;
+}
+
+/* για να στοιχίσω τα περιεχόμενα του κουτιού στο κέντρο */
+
+.london-bg {
+  height: 800px;
+  background-color: aquamarine;
+  background-image: url('../../img/london.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* το φτιάχνω ως background στο div μου. δίνω μόνο height γιατί αφού είναι block element το width εξ ορισμού είναι όλο το width του κουτιου.
+επειδη η εικόνα που βαζω ειναι μικρη η προεπιλογή ειναι να το κανει repeat και να την βαζει πολλές φορές για να γεμίσει το κουτί. οπότε βάζω no repeat και επιλέγω size cover ώστε να καλύψει όλο το κουτί. βεβαια αφού είναι μικρή η εικόνα παραμορφώνεται για να καλύψει όλο το Κουτί.
+με το background attachment fixed η εικόνα παραμένει σταθερή και στο scroll bar δεν μετακινείται και τα υπολοιπα περιεχόμενα πέφτουν πάνω στην εικόνα */

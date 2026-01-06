@@ -1,0 +1,73 @@
+.container {
+  border:1px solid black;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* φτιάχνω ένα κουτί να καλύπτει σε width το 90% της σελίδας, με μαύρο περιθώριο και να είναι στοιχισμένο στο κέντρο της σελίδας */
+
+/* θέλω να φέρω την εικόνα και την λίστα δίπλα δίπλα, να τα κάνω δηλαδή Inline blocks που θα έχουν width & height 
+η εικόνα ήταν ήδη inline elemenent (οχι inline block, σκετο inline element), το div class nav ομως ήταν block element και το κάνω inline-block element*/
+
+.aueb-img {
+  width:400px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav li:first-child {
+  margin-left: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  background-color: aqua;
+  padding: 15px 5px;
+  font-size: 1.2rem;
+  color:black
+}
+
+.nav a:hover {
+  color:green;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:first-child {
+  margin-left: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: aqua;
+  padding: 15px 5px;
+  font-size: 1.2rem;
+  color:black
+}
+
+nav a:hover {
+  color:green;
+}

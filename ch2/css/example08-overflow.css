@@ -1,0 +1,15 @@
+p {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  /* overflow: visible; */
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  overflow: auto;
+}
+
+/* επειδή το κείμενο είναι μεγάλο για το κουτί που έχω ορίσει βγαίνει εκτός, κάνει overflow.
+με το overflow visible το αφήνει να ειναι ορατό εκτός του κουτιού.
+με το overflow hidden κρύβει ότι δεν χωράει στο κουτί και δεν μπορώ να δω το υπόλοιπο κείμενο
+με το overflow scroll εμφανίζει scrollbar είτε το κείμενο κανει Overflow είτε όχι
+με το overflow auto εμφανίζει το scrollbar μόνο στην περίπτωση που το κείμενο όντως δεν χωράει στο κουτί που εχω ορίσει. αν χωράει δεν το εμφανίζει */

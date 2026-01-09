@@ -1,15 +1,21 @@
 .container-grid1 {
   display: grid;
-  /* grid-template-columns: 1fr 2fr 1fr; */
+  /* grid-template-columns: 1fr 2fr 1fr;  */
+  /* φτιάχνει 3 στήλες και η κάθε μία έχει μέγεθος 1 ή 2 στη συγκεκριμένη περίπτωση. χωρίζει το σύνολο της σελίδας σε frαctions και τα μοιράζει σε μέγεθος με βάση αυτό που έχουμε βάλει (/4 συνολικά μοιρασμένο 1-2-1) */
   grid-template-columns: 20% 60% 20%;
-  /* grid-auto-rows: auto; */
+  /* ορίζω πόσο % της συνολικής μου σελίδας θα έχει η κάθε στήλη */
+   /* grid-auto-rows: auto; */
+   /* με το auto rows δηλώνω το ύψος της κάθε σ΄τήλης πόσο θέλω να είναι */
 }
+
+/* στον πάτέρα ορίζω την ιδιότητα του grid ώστε να κληρονομήσουν όλα τα παιδιά του και ορίζω και το μέγεθος που θέλω να έχει το κάθε παίδί */
 
 .container-grid2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 2fr;
   grid-template-rows: 60px 120px;
 }
+/* διαιρώ το width που έχω σε 5 μέρη και τα χωρίζω σε 4 στήλες. δίνω και 2 γραμμές με συγκεκριμένο ύψος */
 
 .container-grid3 {
   display: grid;
@@ -18,10 +24,14 @@
   grid-auto-rows: 50px;
 }
 
+/* 3 στήλες τoy 1fr kai μία με 2fr, η πρώτη γραμμή θέλω να είναι 100px και οι υπόλοιπες 50px*/
+
 div[class^="grid"] {
   border:1px solid red;
 }
+/* div που ξεκινάνε με το grid */
 
 div[class^="container"] {
   margin-top: 20px;
 }
+/* div που ξεκινάνε με το container */

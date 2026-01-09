@@ -6,6 +6,11 @@
   "main main main sidebar"
   "footer footer footer footer";
 }
+/* χωρίζω το πλ΄άτος της σελίδας σε 4 ισόποσα fractions. 
+θελω οι 4 πρώτες στήλες να γίνουν merge και να έχουν alias name header
+στην επομενη γραμμή έχω το main σε 3 merged fractions και ένα sidebar στο τελος και 
+πάλι τα 4 fractions merged στο footer
+*/
 
 .grid-item-1 {
   grid-area: header;

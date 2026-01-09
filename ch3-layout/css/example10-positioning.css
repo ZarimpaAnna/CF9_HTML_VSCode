@@ -1,0 +1,60 @@
+.container {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  background-color: lightblue;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box1 {
+  border: 1px solid black;
+  padding: 80px;
+  background-color: aqua;
+}
+
+.box2 {
+  border: 1px solid black;
+  padding: 80px;
+  background-color: brown;
+}
+
+.box3 {
+  border: 1px solid black;
+  padding: 80px;
+  background-color: green;
+}
+
+.item-relative {
+  position: relative;
+  top:-25px;
+  left:25px;
+}
+
+/* δίνω μία θέση σε σχεση με την αρχικ΄΄η του θέση */
+
+.item-absolute {
+  position: absolute;
+  top: 0;
+  left: 0
+}
+
+/* δίνω μία συγκεκριμένη θέση σε σχέση με τον browser μου, στην περίπτωση που υπάρχει στον πατέρα το argument position relative τότε τοποθετείται σε σχέση με τον πατέρα δηλαδή το container. */
+
+.item-fixed {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+}
+
+/* 'εχουμε μία σταθερή θέση η οποία παραμένει σταθερή όταν κάνω scroll down. θα μπορούσα να χρησιμοποιήσω σε ένα μενού που θέλω να είναι σταθερό σε θέση και σε scroll down */
+
+.z-front {
+  z-index: 1;
+}
+
+/* με το z-index:1 μου φερνει το αντικείμενο μπροσ΄τα σε περίπτωση που πέφτει πανω σε κάτι άλλο. εφαρμόζεται σε περιπτώσεις που έχω position relative */

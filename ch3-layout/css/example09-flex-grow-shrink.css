@@ -1,0 +1,36 @@
+.container-flex {
+  width:90%;
+  border:1px solid black;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  /* φέρνω τα στοιχεία του container σε οριζόντια στοίχιση, το display flex εφαρμόζεται στον πατέρα για να περάσει στα περιεχόμενα */
+  flex-direction: row;
+  /* είναι το default του display flex, αν τα θέλω σε στήλη τα κα΄νω flex-direction column */
+  /* flex-wrap: wrap; */
+}
+
+/* flex: flex-grow flex-shrink flex-basis */
+
+.flex-item-1 {
+  background-color: aqua;
+  flex: 0 0 200px;
+}
+
+.flex-item-2 {
+  background-color: brown;
+  flex: 0 0 700px;
+}
+
+.flex-item-3 {
+  background-color: lightblue;
+  flex: 0 1 1000px;
+
+  /* αν μέινει στο αρχικό του μέγεθος γίνεται overflow Και βγαίνει εκ΄τός από τα όρια του πατέρα. αν ήθελα να πάει από κάτω για να χωρέσει και να κρατήσει τα 1000px τότε δίνω στον πατέρα flex-wrap: wrap και πάει στην από κάτω γραμμή */
+}
+
+/* με το flex αλλάζω το μέγεθος του αντικειμένου σε σχέση με το αρχικό του μέγεθος 0. 
+flex-grow 1 παίρνει όλο το διαθέσιμο ΄χώρο που υπάρχει και αγνοεί το flex basis, αν εχω σε παραπάνω απο ένα αντικείμενα τότε μοιράζονται το χώρο
+flex-shrink 1 αν δεν υπαρχει διαθέσιμος χώρος στο container Που ανήκει θα πάρει ότι υπάρχει.
+flex-basis ΧΧpx η αρχικοποίηση του μέγεθους που θέλω να έχει το αντικειμενο*/

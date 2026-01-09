@@ -7,7 +7,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+/* δεν αφήνει κενό στα άκρα αλλά αφήνει ίσο χώρο ανάμεσα μετά τα box flex παρακάτω το effect αυτο δεν φαινεται*/
   align-items: center;
+  /* κεντράρει κάθετα στο κέντρο του container */
 }
 
 div[class^="box"] {
@@ -23,10 +25,16 @@ div[class^="box"] {
   flex:1
 }
 
+/* στην περιπτωση του size η προεπιλογη είναι flex 0 για όλα δηλαδή το 60px που έχω δηλώσει, βάζοντας flex 1 σε κάποια πάει και δίνει το διπλάσιο μέγεθος width δηλαδή 120px */
+
 .box6 {
   flex:2
 }
 
+/* δίνει 3 * 60px */
+
 .box3 {
   flex:initial
 }
+
+/* κρατάει το αρχικό που έχω ορίσει δηλαδή το 60px */

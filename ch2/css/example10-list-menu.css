@@ -7,9 +7,7 @@
 
 /* φτιάχνω ένα κουτί να καλύπτει σε width το 90% της σελίδας, με μαύρο περιθώριο και να είναι στοιχισμένο στο κέντρο της σελίδας */
 
-/* θέλω να φέρω την εικόνα και την λίστα δίπλα δίπλα, να τα κάνω δηλαδή Inline blocks που θα έχουν width & height 
-η εικόνα ήταν ήδη inline elemenent (οχι inline block, σκετο inline element), το div class nav ομως ήταν block element και το κάνω inline-block element
-το ίδιο και μέσα στην ίδια τη λίστα τα li ειναι block element οπότε θέλω να τα κάνω και αυτά inline block*/
+
 
 .aueb-img {
   width:400px;
@@ -22,6 +20,11 @@
   vertical-align: middle;
 }
 
+/* θέλω να φέρω την εικόνα και την λίστα δίπλα δίπλα, να τα κάνω δηλαδή Inline blocks που θα έχουν width & height 
+η εικόνα ήταν ήδη inline elemenent (οχι inline block, σκετο inline element), το div class nav ομως ήταν block element και το κάνω inline-block element
+το ίδιο και μέσα στην ίδια τη λίστα τα li/ul ειναι block element οπότε θέλω να τα κάνω και αυτά inline block*/
+
+
 .nav li {
   display: inline-block;
   margin-right: 20px;
@@ -33,7 +36,7 @@
   margin-left: 25px;
 }
 
-/* αφήνω ένα μεγαλύτερο κενό πριν το πρώτο στοιχείο της λίστας */
+/* αφήνω ένα μεγαλύτερο κενό πριν το πρώτο στοιχείο της λίστας (first child) */
 
 .nav a {
   text-decoration: none;
@@ -47,7 +50,7 @@
   color:green;
 }
 
-/* παρακάτω δεύτερος τρόπος που είναι καλύτερος καθώς χρησιμοποιούμε elements header, nav και όχι μόνο classes μέα σε div. έτσι έχουν καλύτερο readability απο screen readers */
+/* παρακάτω δεύτερος τρόπος που είναι καλύτερος καθώς χρησιμοποιούμε elements header, nav και όχι μόνο classes μέσα σε div. έτσι έχουν καλύτερο readability απο screen readers */
 
 .mt-5 {
   margin-top: 5px;

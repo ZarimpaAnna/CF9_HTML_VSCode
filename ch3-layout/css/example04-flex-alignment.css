@@ -1,27 +1,42 @@
 .container {
   display: flex;
+  /*είμαι στον πατέρα και βάζω display flex άρα αυτή η ιδιότητα εφαρμόζεται σε όλα τα παιδιά του container*/
   width: 90%;
   height: 500px;
   border: 1px solid black;
-  /* οριζόντια στοίχιση */
+  /* οριζόντια στοίχιση, το justify content δουλεύει μόνο αν ε΄χω display flex*/
   justify-content: flex-start;
+  /* τα βάζει οριζόντια από την αρχή της γραμμής */
   justify-content: flex-end;
+  /* τα βάζει οριζόντια στο τέλος της γραμμής */
   justify-content: center;
+  /* τα βάζει οριζόντια στο κέντρο */
   justify-content: space-around;
+  /* τα βάζει κεντραρισμένα αλλά διαμοιράζει το κενό μεταξύ των κουτιών με ιση δεξιά αριστερά απο το καθένα */
   justify-content: space-between;
+  /* δεν αφήνει κενό στα άκρα αλλά αφήνει ίσο χώρο ανάμεσα */
   justify-content: space-evenly;
+  /* με ίση α΄πόσταση δεξιά-αριστερά ολα με ολά */
 
   /* κάθετη στοίχιση */
   align-items: start;
   align-items: center;
   align-items: end;
   align-items: stretch;
+  /* το strech μπορεί να δουλέψει χωρίς το height μέσα στο div απο κάτω ΄ωστε να μην έχει σταθερό ύψος και να μπορείς να τα στρετσάρει στο ύψος του container */
 }
 
 div[class^="box"] {
   width:200px;
   height: 200px;
   margin: 0 5px;
+  /* το 0 αντιστοιχεί στο πάνω κάτω και το 5px στο αριστερά δεξιά */
   background-color: lightblue;
   border: 1px solid black;
 }
+/* όλα τα elements που το class τους ξεκινάει απο "box" */
+
+/* για να βάλω τα κουτιά το ένα δίπλα στο άλλο έχω 3 τρόπους:
+1.float
+2.display inline block
+3.display flex */

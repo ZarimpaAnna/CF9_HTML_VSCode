@@ -4,6 +4,8 @@
   margin-right: auto;
 }
 
+/* πρεπει να βάλω παραπάνω απο 800px γιατί στο περιεχομενο έχω δυο κουτιά 200px + 400px αλλά έχουν και border 1px το καθένα */
+
 .header {
   height: 120px;
   border:1px solid black;
@@ -33,3 +35,5 @@
   background-color: lightblue;
   clear:both
 }
+
+/* βάζω clear both γιατί επειδή είχαμε κάνει float τα δυο προηγούμενα στοιχεία έχουν χάσει την block element ιδιοτητα τους και το footer κρυβόταν πίσω τους. κάνοντας clear το footer πηγαίνει στην θέση από κάτω τους */

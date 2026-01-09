@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,10 +9,14 @@
   background-color: #762124;
 }
 
+/* το βάζω στον πατέρα header για να εφαρμοστεί στα παιδιά του εικόνα και class nav */
+
 .nav {
   background-color: aqua;
   width: 700px;
 }
+
+/* του δίνω width για να έχουν χώρο να ξεκολλησουν τα στοιχεία της λίστας (του παιδιού) και να μπορεί να δουλέψει το justify space around */
 
 .nav > ul {
   display: flex;
@@ -23,3 +26,5 @@
   background-color: pink;
   height: 120px;
 }
+
+/* το display flex το βάζω στον πατέρα nav για να εφαρμοστε΄΄ι στα παιδιά του ul */

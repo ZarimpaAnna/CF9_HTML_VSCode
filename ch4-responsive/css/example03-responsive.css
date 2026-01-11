@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 95%;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: cornflowerblue;
+}
+
+.side {
+  background-color: orange;
+}
+
+.footer {
+  background-color: lightblue;
+}
+
+.box {
+  height: 150px;
+  border:1px solid black;
+  float: left;
+}
+
+/* έχω το convention ότι το width της οθόνης χωρίζεται σε 12 μέρη */
+
+/* όταν έχω απο 992px και πάνω ορίζω 12 breakpoints με το επιθυμητό width. Μετά για κάθε item που έχω επιλέγω σε ποιο breakpoint θέλω να ανήκει. Πχ ΤΟ header και το footer θέλω να καταλαμβάνει το 100% του διαθέσιμου width, ενώ τa 2 side box θέλω να αν η οθόνη είναι από 992px και πάνω θέλω να μοιράζονται το width 50%/50% και να εμφανίζονται το ένα δίπλα στο άλλο, για να εμφανίζονται το ένα δίπλα στο άλλο εκτός απο το width 50% πρέπει να ορίσω και float: left (ορισμένο στο .box παραπάνω) αλλιώς θα εμφανίζονται με το default τρόπο το ένα κάτω από το άλλο*/
+
+@media (min-width:992px) {
+  .col-1 { width:8.33% }
+  .col-2 { width:16.66% }
+  .col-3 { width: 25% }
+  .col-4 { width:33.33% }
+  .col-5 { width:41.66% }
+  .col-6 { width: 50% }
+  .col-7 { width: 58.33% }
+  .col-8 { width: 66.66% }
+  .col-9 { width: 75% }
+  .col-10 { width:83.33% }
+  .col-11 { width:91.66% }
+  .col-12 { width:100% }
+
+  body {
+    background-color: lightgray;
+  }
+}
+
+/* όταν έχω απο 991px και κα΄τω δηλαδή μικ΄ρές και μεσαίες οθόνες ορίζω κατά τον ίδιο τρόπο 12 breakpoints με το επιθυμητό width. Μετά για κάθε item που έχω επιλέγω σε ποιο breakpoint θέλω να ανήκει. Το header και το footer θέλω να εξακολουθεί να καταλαμβάνει το 100% του διαθέσιμου width, και τα 2 side box σε αυτή την περίπτωση επίσης να καταλαμβάνουν το 100% του διαθέσιμου width άρα τα ορίζω όλα ως col-sm-12 */
+
+@media (max-width:991px) {
+  .col-sm-1 { width:8.33% }
+  .col-sm-2 { width:16.66% }
+  .col-sm-3 { width: 25% }
+  .col-sm-4 { width:33.33% }
+  .col-sm-5 { width:41.66% }
+  .col-sm-6 { width: 50% }
+  .col-sm-7 { width: 58.33% }
+  .col-sm-8 { width: 66.66% }
+  .col-sm-9 { width: 75% }
+  .col-sm-10 { width:83.33% }
+  .col-sm-11 { width:91.66% }
+  .col-sm-12 { width:100% }
+}

@@ -1,0 +1,29 @@
+/* με βάση το μέγεθος των οθονών (width) υπάρχουν ορισμένα κάποια *breakpoints*: x-small, small, medium, large, x-large, xx-large. Mε βάση αυτά πρέπει να υλοποιούμε και να ελέγχουμε αν η σελίδα μας ειναι responsive */
+
+/* Large */
+@media (min-width:992px) and (max-width:1200px) {
+  body {
+    background-color: green;
+  }
+}
+
+/* Extra Large */
+@media (min-width:1201px) and (max-width:1400px) {
+  body {
+    background-color: red;
+  }
+}
+
+/* xx-Large */
+@media (min-width:1401px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* x-small, small, medium */
+@media (max-width:991px) {
+  body {
+    background-color: yellow;
+  }
+}

@@ -1,0 +1,28 @@
+/* Με τον όρο responsive εννούμε να προσαρμόζεται η σελίδα σε διαφορετικές οθόνες, διαφορετικού πλάτους πχ κινητο, tablet, laptop, desktop */
+
+/* body {
+  background-color: red;
+  color: blue
+} */
+
+/* @media all {
+  body {
+    background-color: orange;
+    color:aqua;
+  }
+} */
+
+@media (min-width:992px) {
+  body {
+    background-color: green;
+  }
+}
+/* αν η οθόνη μου πάνω απο 992px κάνε το background πράσινο */
+
+@media (max-width:992px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+/* αν είναι η οθόνη μου λιγότερο από 992px κάνε το background κίτρινο */

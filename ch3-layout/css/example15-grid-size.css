@@ -4,21 +4,30 @@
   gap: 10px;
 }
 
+/* το gap αφήνει περιθώριο μεταξύ των κουτιών (grid items) */
+
 div[class^="grid"] {
   border: 1px solid black;
 }
+
+/* 1ος τρόπος για να δώσω στο grid-item-1 χώρο 2 fractions, ξεκίνα από την πρώτη στήλη και πίασε span 2 στήλες */
 
 /* .grid-item-1 {
   background-color: green;
   grid-column-start: 1;
   grid-column-end: span 2;
 } */
+
+/* 2ος τρόπος για να δώσω στο grid-item-1 χώρο 2 fractions, ξεκίνα από την πρώτη στήλη και φτάσε μέχρι την 3 non inclusive, σταματάει πριν την 3 */
+
 /* 
 .grid-item-1 {
   background-color: green;
   grid-column-start: 1;
   grid-column-end: 3;
 } */
+
+/* 3ος τρόπος για να δώσω στο grid-item-1 χώρο 2 fractions, ξεκίνα από την 1η και σταμάτα πριν απο την 3η  */
 
 .grid-item-1 {
   background-color: green;

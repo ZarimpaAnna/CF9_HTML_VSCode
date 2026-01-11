@@ -7,9 +7,9 @@
   "footer footer footer footer";
 }
 /* χωρίζω το πλ΄άτος της σελίδας σε 4 ισόποσα fractions. 
-θελω οι 4 πρώτες στήλες να γίνουν merge και να έχουν alias name header
-στην επομενη γραμμή έχω το main σε 3 merged fractions και ένα sidebar στο τελος και 
-πάλι τα 4 fractions merged στο footer
+θελω στην πρώτη γραμμή οι 4 στήλες να γίνουν merge και να έχουν alias name header
+στη δεύτερη γραμμή κάνω merge τις 3 πρώτες στήλες (fractions) ως alias main και αφήνω ένα fraction με alias sidebar στο τελος και 
+στην τρίτη γραμμή πάλι τα 4 fractions merged με alias footer
 */
 
 .grid-item-1 {

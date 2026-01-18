@@ -16,13 +16,13 @@ header {
   align-items: center;
   background-color: #762124;
 }
+
 /* στο header έχω δύο items, την εικόνα και το μενού. θ΄έλω να τα φέρω το ένα δίπλα στο άλλο και βάζω display flex */
 
 .logo > img {
   height: 120px;
   width: auto;
 }
-
 /* δίνω height στο λογότυπο του header γιατι το default του ειναι πολύ μεγάλο για banner.  */
 
 nav {
@@ -149,5 +149,13 @@ footer {
   .navbar-toggler {
     display: block;
   }
+}
 
+/* Add for javascript */
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
 }

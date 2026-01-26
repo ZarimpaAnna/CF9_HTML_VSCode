@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      .row {
+        min-height: 10rem;
+        margin-top: 1rem;
+        background-color: #97a6bd;
+      }
+
+    </style>
+  </head>
+  <body>
+    
+    <div class="container-lg">
+
+      <div class="row align-items-start">
+        <!-- με το align items start φεύγει το stretch (δηλαδή να πιάνει όλο το ύψος του πατέρα) και πιάνει μόνο το ύψος των περιεχομενων και στοιχίζω πάνω  -->
+        <div class="bg-info border border-danger col text-center">CF-1</div>
+        <!-- text=center για να στοιχιθούν τα περιεχόμενα του κουτιού στο κ΄έντρο -->
+        <div class="bg-info border border-danger col">CF-2</div>
+        <div class="bg-info border border-danger col">CF-3</div>
+      </div>
+
+      <div class="row align-items-center">
+        <!-- με το align items center φεύγει το stretch (δηλαδή να πιάνει όλο το ύψος του πατέρα) και πιάνει μόνο το ύψος των περιεχομενων και στοιχίζω στο κέντρο  -->
+        <div class="bg-info border border-danger col">CF-1</div>
+        <div class="bg-info border border-danger col">CF-2</div>
+        <div class="bg-info border border-danger col">CF-3</div>
+      </div>
+
+      <div class="row align-items-end">
+        <!-- με το align items start φεύγει το stretch (δηλαδή να πιάνει όλο το ύψος του πατέρα) και πιάνει μόνο το ύψος των περιεχομενων και στοιχίζω κάτω  -->
+        <div class="bg-info border border-danger col">CF-1</div>
+        <div class="bg-info border border-danger col">CF-2</div>
+        <div class="bg-info border border-danger col">CF-3</div>
+      </div>
+
+    </div>
+
+    <div class="container-lg mt-3">
+
+      <div class="row justify-content-start">
+        <!-- με το justify-content-start φεύγει το stretch (δηλαδή να πιάνει όλο το μέγεθος του πατέρα) και στοιχίζει στα δεξιά, συνδυαστικά εχω δώσει από κατώ στο κάθε κουτί col-2 ώστε να μην πιανουν όλο το περιεχομενο και να φανεί/να μπορεί να γίνει η στοίχιση -->
+        <div class="col-2 bg-info border border-danger text-center">CF-1</div>
+        <div class="col-2 bg-info border border-danger text-center">CF-2</div>
+        <div class="col-2 bg-info border border-danger text-center">CF-3</div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-2 bg-info border border-danger text-center">CF-1</div>
+        <div class="col-2 bg-info border border-danger text-center">CF-2</div>
+        <div class="col-2 bg-info border border-danger text-center">CF-3</div>
+      </div>
+
+      <div class="row justify-content-end">
+        <div class="col-2 bg-info border border-danger text-center">CF-1</div>
+        <div class="col-2 bg-info border border-danger text-center">CF-2</div>
+        <div class="col-2 bg-info border border-danger text-center">CF-3</div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-xl-12 col-6 border border-primary">Hello 1</div>
+        <!-- του ορίζω όταν είναι η ο΄θονη xl να πιάνει όλο το μέγεθος και σε οποιαδήποτε αλλη περίπτωση να πιάνει 6/12 -->
+        <div class="d-xl-none col-6 border border-danger">Hello2</div>
+        <!-- του ορίζω display none όταν έχω οθόνη xl και σε αυτή την περίπτωση δεν φαίνεται καθόλου και σε xl οθόνη και κάτω να πιάνει 6/12 και έρχονται το ένα κουτί δίπλα στο άλλο λόγω του row-justify-content -->
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

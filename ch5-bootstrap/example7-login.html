@@ -11,32 +11,45 @@
 
     <div class="container-sm">
       <div class="card mt-3">
+        <!--βάζει ένα πλαίσιο με το card Και αφήνω και ένα πλα΄ίσιο margin 3 top απο πανω  -->
 
         <div class="card-body">
           <div class="card-title text-center h4">Create Account</div>
+          <!-- το φ΄ερνω στο κέντρο και το μεγαλώνων με h4 σαν τίτλος του card -->
           <div class="text-center small text-muted mb-3">Get started with your account</div>
+          <!-- το βάζω στο κέντρο, με μικρά γ΄ραμματα small, γκρίζα γράμματα muted και margin bottom 3 απο κατω -->
 
           <div class="text-center mb-2">
+            <!-- στοιχίζω στο κέντρο και αφήνω margin bottom 2 -->
             <a href="" class="btn btn-primary col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+              <!-- ορίζω ότι είναι button, με το btn-primary Ορίζω το χρ΄ωμα του, το μεγαλώνω λέγοντας να πιάσει 7 στήλες και να προσαρμόζεται αντίστοιχα αναλογα με το μέγεθος της οθόνης sm, md, lg, xl  -->
               <i class="bi bi-twitter-x"></i>
+              <!-- βάζω το εικονίδιο του twitter -->
               Login via twitter
             </a>
           </div>
           <div class="text-center mb-2">
+            <!-- στοιχίζω στο κέντρο και αφήνω margin bottom 2 -->
             <a href="" class="btn btn-primary col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+              <!-- ομοίως με το προηγούμενο κουμπί -->
               <i class="bi bi-facebook"></i>
+              <!-- βάζω το εικονίδιο του facebook -->
               Login via facebook
             </a>
           </div>
 
           <div class="text-center mb-3">
+          <!-- στοιχίζω στο κέντρο και αφήνω margin bottom 3 -->
             <span>OR</span>
           </div>
 
           <form>
             <div class="mx-auto w-50 form-group input-group mb-3 col-8 col-sm-7 col-md-6 col-lg-5 col-xl-4">
+              <!-- mx-auto για να το φέρει στο κέντρο και μέγεθος στήλης w-50%, margin bottom 3, να πιάνει 8 στήλες και να προσαρμόζεται στις διάφορες οθόνες. το input-group το βάζω για να ενσωματώσει από κάτω τα αντίστοιχα input-group. ομοίως και το form group για τα form control πεδία από κάτω-->
               <span class="input-group-text"><i class="bi bi-person"></i></span>
+              <!-- για να γίνει το εικονίδιο με το ανθρωπακι ένα με τη φόρμα μου βάζω το Input group text, αλλιως μπαίνει μεν δίπλα στα αριστερά αλλά όχι με την ίδια στοιχιση και το ίδιο περιγραμμα -->
               <input class="form-control" type="text" placeholder="username">
+              <!-- με το form control ενοποιεί τα κουτια, αν δεν το βάλω το Username ειναι σε ένα κουτί δίπλα στο οικονίδιο μεν δεν καταλαμβάνει όμως το σύνολο του div μου οπως το έχω ορίσει παραπάνω -->
             </div>
 
             <div class="mx-auto w-50 form-group input-group mb-3 col-8 col-sm-7 col-md-6 col-lg-5 col-xl-4">
@@ -44,12 +57,12 @@
               <input class="form-control" type="password" placeholder="password">
             </div>
 
-            <div>
-              <button>Create Account</button>              
+            <div class="text-center mb-3">
+              <button class="btn btn-success">Create Account</button>              
             </div>
           </form>
 
-          <div>
+          <div class="text-center">
             <span>Have an account</span>
           </div>
 

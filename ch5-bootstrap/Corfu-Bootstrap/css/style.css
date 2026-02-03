@@ -1,0 +1,33 @@
+/* .bg-dark {
+  background-color: #006994!important;
+} */
+ /* δεν χρησιμοποιώ class names που υπάρχουν στο bootstrap. αν όμως ήθελα να εφαρμοστεί όπως δήποτε τότε το βάζουμε important ώστε να υπερισχύσει σαν κανόνας */
+
+.bg-blue {
+  background-color: #006994;
+}
+/* bg-blue δεν υπάρχει σαν class name στο bootstrap, το μπλε υπάρχει ως primary */
+
+header {
+  height: 500px;
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* min-height: 50%; */
+}
+
+.line {
+  background-color: #006994;
+}
+
+.card-img {
+  height: 250px;
+}
+/* ώστε το ύψος όλων των εικόνων να είναι το ίδιο, το πλάτος ορίζεται ήδη από τα col-sm-4 που έχουν τα div με τις εικόνες */
+
+.social a {
+  color: white;
+  font-size: 2rem;
+}
